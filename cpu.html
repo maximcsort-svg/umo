@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Сравнение процессоров у Мо</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%2342d9f5%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%231688d4%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%279%27%20fill%3D%27url%28%23g%29%27/%3E%3Ctext%20x%3D%2716%27%20y%3D%2721.2%27%20text-anchor%3D%27middle%27%20font-family%3D%27Arial%2CHelvetica%2Csans-serif%27%20font-weight%3D%27900%27%20font-size%3D%2713.5%27%20fill%3D%27%2303111d%27%3EuMo%3C/text%3E%3C/svg%3E"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="data:image/png;base64,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"
+    />
+    <script src="js/features.js"></script>
+    <link rel="stylesheet" href="css/style.css?v=20261103a" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <button
+          class="burger"
+          id="menuToggle"
+          type="button"
+          aria-label="Меню"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="brand">
+          <div class="logo">uMo</div>
+          <div class="brand-text">
+            <span class="bt-sub">сравнение<br />процессоров </span
+            ><span class="bt-name" data-feature="brandname"
+              >у <span>Мо</span></span
+            >
+          </div>
+        </div>
+        <div class="top-actions">
+          <label
+            class="theme-picker-label"
+            for="themePicker"
+            aria-label="Цветовая тема"
+            >Тема</label
+          ><select
+            id="themePicker"
+            class="theme-picker"
+            aria-label="Выбрать тему"
+          >
+            <option value="default">Океан</option>
+            <option value="mono">Чёрно-белая</option>
+            <option value="light">Светлая</option>
+            <option value="purple">Фиолетовая</option>
+            <option value="forest">Зелёная</option></select
+          ><button class="btn login-btn" id="loginButton" data-feature="login">
+            Войти<span class="login-more"> / Зарегистрироваться</span>
+          </button>
+        </div>
+      </header>
+      <div class="drawer-backdrop" id="drawerBackdrop"></div>
+      <div class="layout">
+        <aside class="sidebar panel">
+          <div class="section-label">РАЗДЕЛЫ</div>
+          <div class="navitem" data-page="compare">
+            <span class="ico">▦</span>Сравнение видеокарт
+          </div>
+          <div class="navitem active" data-page="processors" data-feature="processors">
+            <span class="ico">▤</span>Сравнение процессоров
+          </div>
+          <div class="navitem" data-page="rate" data-feature="rate">
+            <span class="ico">◈</span>Моя видеокарта
+          </div>
+          <div class="navitem" data-page="error" data-feature="error">
+            <span class="ico">⚑</span>Нашли ошибку?
+          </div>
+          <div class="navitem" data-page="contact" data-feature="contact">
+            <span class="ico">✉</span>Напишите нам
+          </div>
+          <div class="navitem" data-page="faq">
+            <span class="ico">?</span>FAQ
+          </div>
+          <div class="help-card">
+            <div class="help-title">Помощь в подборе комплектующих</div>
+            <p class="help-sub">Напишите нам в удобный мессенджер</p>
+            <div class="help-links">
+              <a
+                class="help-link max"
+                href="https://max.ru/"
+                target="_blank"
+                rel="noopener"
+                >MAX</a
+              ><a
+                class="help-link tg"
+                href="https://telegram.org/"
+                target="_blank"
+                rel="noopener"
+                >Telegram</a
+              ><a
+                class="help-link wa"
+                href="https://www.whatsapp.com/"
+                target="_blank"
+                rel="noopener"
+                >WhatsApp</a
+              >
+            </div>
+          </div>
+          <button class="btn" id="siteFeedback" data-feature="feedback">
+            ✉ Отзыв о сайте
+          </button>
+        </aside>
+        <main class="main">
+          <div class="filters panel">
+            <div class="filter-title">ВЫБРАТЬ ПРОЦЕССОРЫ</div>
+            <div class="gpu-filter all-filter" data-scope="all">
+              <input
+                id="filter-all"
+                type="text"
+                placeholder="Все процессоры"
+                autocomplete="off"
+                aria-label="Поиск среди всех процессоров"
+              /><button
+                type="button"
+                class="filter-arrow"
+                aria-label="Показать список"
+              >
+                ▾
+              </button>
+              <div class="filter-options"></div>
+            </div>
+
+            <div class="gpu-filter amd-filter" data-scope="AMD">
+              <input
+                id="filter-amd"
+                type="text"
+                placeholder="AMD — выбрать модель"
+                autocomplete="off"
+                aria-label="Поиск процессоров AMD"
+              /><button
+                type="button"
+                class="filter-arrow"
+                aria-label="Показать список AMD"
+              >
+                ▾
+              </button>
+              <div class="filter-options"></div>
+            </div>
+            <div class="gpu-filter intel-filter" data-scope="INTEL">
+              <input
+                id="filter-intel"
+                type="text"
+                placeholder="INTEL — выбрать модель"
+                autocomplete="off"
+                aria-label="Поиск процессоров Intel"
+              /><button
+                type="button"
+                class="filter-arrow"
+                aria-label="Показать список Intel"
+              >
+                ▾
+              </button>
+              <div class="filter-options"></div>
+            </div>
+            <div class="gpu-filter retro-filter" data-scope="retro">
+              <input
+                id="filter-retro"
+                type="text"
+                placeholder="Ретро процессоры до 2010г"
+                autocomplete="off"
+                aria-label="Поиск ретро процессоров до 2010 года"
+              /><button
+                type="button"
+                class="filter-arrow"
+                aria-label="Показать список ретро процессоров"
+              >
+                ▾
+              </button>
+              <div class="filter-options"></div>
+            </div>
+            <div class="gpu-filter favorites-filter" data-scope="favorites">
+              <input
+                id="filter-favorites"
+                type="text"
+                placeholder="★ Избранные"
+                autocomplete="off"
+                aria-label="Избранные процессоры"
+              /><button
+                type="button"
+                class="filter-arrow"
+                aria-label="Показать избранные"
+              >
+                ▾
+              </button>
+              <div class="filter-options"></div>
+            </div>
+          </div>
+          <section class="table-panel panel">
+            <div class="table-viewport" id="viewport">
+              <table id="gpuTable">
+                <thead>
+                  <tr>
+                    <th
+                      class="remove-column-head"
+                      aria-label="Удалить из сравнения"
+                    ></th>
+                    <th>Процессор</th>
+
+                    <th>Сокет / техпроцесс</th>
+                    <th
+                    >
+                      Тип
+                    </th>
+                    <th>Релиз</th>
+                    <th>Ядра / потоки</th>
+                    <th>Частота<small>база-буст</small></th>
+                    <th>Кэш L1/L2/L3</th>
+                    <th>
+                      Max t° / энергопотребление
+                    </th>
+                    <th>Тип памяти</th>
+                    <th>Видеоядро</th>
+                    <th>Ревизия PCI / линий</th>
+                    <th>Архитектура</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div
+                class="tgrid"
+                id="gridT"
+                role="table"
+                aria-label="Сравнение процессоров: процессоры в столбцах"
+              ></div>
+            </div>
+            <div class="table-bottom">
+              <span class="bottom-spacer"></span>
+              <div class="bottom-actions">
+                <button
+                  class="btn"
+                  id="orientToggle"
+                  type="button"
+                  aria-pressed="false"
+                  title="Повернуть таблицу: процессоры в столбцах"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <rect x="3" y="4" width="18" height="16" rx="2" />
+                    <path d="M9 4v16M3 9h18M13 6l2 2-2 2M17 14l-2 2 2 2" />
+                  </svg></button
+                ><button
+                  class="btn"
+                  id="clearSearch"
+                  type="button"
+                  aria-label="Очистить запрос"
+                  title="Очистить запрос"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2.4 9.1 1.9 11.1 3.6 11.1 5.0 10.9 5.4 11.3 5.2 11.7 4.7 11.9 1.9 12.9 2.3 14.6 2.7 15.8 4.9 15.1 6.7 14.3 7.0 14.4 7.2 14.6 7.1 15.0 6.4 15.8 3.9 17.9 4.8 19.0 6.7 20.7 8.9 22.0 9.9 21.4 10.2 21.5 10.4 21.8 9.9 22.4 11.2 22.8 12.8 21.7 14.4 20.2 14.7 20.2 15.0 20.4 15.0 20.7 13.4 23.0 15.0 22.9 16.1 21.0 17.0 18.9 17.6 16.6 17.8 14.7 9.6 8.1 7.8 8.8 5.9 9.1 3.9 9.2ZM10.6 7.5 18.2 13.7 18.1 13.1 17.8 12.7 12.0 7.9 11.3 7.5ZM22.0 1.0 21.0 1.3 20.4 1.9 18.1 5.8 16.8 7.2 16.4 7.2 15.2 6.6 14.0 6.3 13.1 6.5 12.5 6.9 18.2 11.6 18.5 10.8 18.4 9.9 18.0 8.9 17.1 7.8 17.1 7.4 18.2 5.9 21.5 2.8 22.0 1.9Z"
+                    />
+                  </svg></button
+                ><button
+                  class="btn primary icon-only"
+                  id="shareComparison"
+                  type="button"
+                  aria-label="Поделиться сравнением"
+                  title="Поделиться сравнением"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <path d="m8.7 10.7 6.6-4.4M8.7 13.3l6.6 4.4"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="perf-panel" id="perfPanel">
+            <div class="perf-list" id="perfList"></div>
+            <div class="perf-empty" id="perfEmpty" aria-hidden="true"></div>
+          </section>
+        </main>
+        <aside class="rightbar">
+          <section class="right-card panel drawing-card">
+            <div class="drawing-head">Заметки</div>
+            <div
+              class="drawing-tools"
+              role="toolbar"
+              aria-label="Инструменты заметки"
+            >
+              <button
+                class="btn drawing-tool active"
+                id="drawTool"
+                type="button"
+                aria-pressed="true"
+                title="Рисовать"
+              >
+                ✎</button
+              ><button
+                class="btn drawing-tool"
+                id="textTool"
+                type="button"
+                aria-pressed="false"
+                title="Добавить текст"
+              >
+                T</button
+              ><button
+                class="btn drawing-tool"
+                id="undoDrawing"
+                type="button"
+                title="Отменить последнее действие (Ctrl+Z)"
+                aria-label="Отменить последнее действие"
+              >
+                ↶</button
+              ><button
+                class="btn drawing-tool"
+                id="clearDrawing"
+                type="button"
+                title="Очистить лист"
+                aria-label="Очистить лист"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2.4 9.1 1.9 11.1 3.6 11.1 5.0 10.9 5.4 11.3 5.2 11.7 4.7 11.9 1.9 12.9 2.3 14.6 2.7 15.8 4.9 15.1 6.7 14.3 7.0 14.4 7.2 14.6 7.1 15.0 6.4 15.8 3.9 17.9 4.8 19.0 6.7 20.7 8.9 22.0 9.9 21.4 10.2 21.5 10.4 21.8 9.9 22.4 11.2 22.8 12.8 21.7 14.4 20.2 14.7 20.2 15.0 20.4 15.0 20.7 13.4 23.0 15.0 22.9 16.1 21.0 17.0 18.9 17.6 16.6 17.8 14.7 9.6 8.1 7.8 8.8 5.9 9.1 3.9 9.2ZM10.6 7.5 18.2 13.7 18.1 13.1 17.8 12.7 12.0 7.9 11.3 7.5ZM22.0 1.0 21.0 1.3 20.4 1.9 18.1 5.8 16.8 7.2 16.4 7.2 15.2 6.6 14.0 6.3 13.1 6.5 12.5 6.9 18.2 11.6 18.5 10.8 18.4 9.9 18.0 8.9 17.1 7.8 17.1 7.4 18.2 5.9 21.5 2.8 22.0 1.9Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="drawing-paper-wrap">
+              <canvas
+                id="drawingCanvas"
+                aria-label="Поле для рисования и заметок"
+              ></canvas>
+            </div>
+            <div class="drawing-footer">
+              <button class="btn" id="saveDrawing">Сохранить заметку</button
+              ><button class="btn send-drawing" id="sendDrawing">
+                Поделиться
+              </button>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
+    <div
+      class="cookie-bar"
+      id="cookieBar"
+      data-feature="cookies"
+      role="region"
+      aria-label="Уведомление об использовании cookie"
+    >
+      <p>
+        Сайт использует cookie и память браузера, чтобы запоминать ваши
+        настройки: тему, избранное и заметки. Продолжая пользоваться сайтом, вы
+        соглашаетесь с этим.
+      </p>
+      <div class="cookie-actions">
+        <button class="btn" id="cookieMore" type="button">Подробнее</button
+        ><button class="btn primary" id="cookieOk" type="button">
+          Понятно
+        </button>
+      </div>
+    </div>
+    <div
+      class="modal-backdrop"
+      id="modalBackdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="site-modal">
+        <button class="modal-close" id="modalClose" aria-label="Закрыть">
+          ×
+        </button>
+        <h2 id="modalTitle">Связаться с GPU Compare</h2>
+        <div id="modalBody"></div>
+        <div class="modal-actions">
+          <button class="btn" id="modalCancel">Закрыть</button
+          ><button class="btn primary" id="modalSubmit">Продолжить</button>
+        </div>
+      </div>
+    </div>
+    <script>window.PAGE_TYPE='cpu';</script>
+    <script src="js/app.js?v=20261103a"></script>
+  </body>
+</html>
